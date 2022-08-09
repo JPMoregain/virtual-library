@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <p>Library</p>
+        </div>
+        <div id="body">
+            <div id="book-container">
+                <div id="books"></div>
+                <div id="button-container">
+                    <button id="new-book">New Book</button>
+                    <div class="form-popup" id="book-form">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Book Information</h1>
+
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="E.g., The Hobbit" name="name" required>
+
+                            <label for="author"><b>Author</b></label>
+                            <input type="text" placeholder="J.R.R. Tolkien" name="author" required>
+
+                            <label for="pages"><p><b>Number of Pages</b></p></label>
+                            <input type="number" placeholder="310" name="pages" required>
+
+                            <label for="read"><p><b>Has Been Read</b></p></label>
+                            <input type="checkbox" name="read" required>
+
+                            <button type="submit" class="btn">Add Book</button>
+                            <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="panel">
+                <p>Information</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
