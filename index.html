@@ -17,25 +17,25 @@
             <div id="book-container">
                 <div id="books"></div>
                 <div id="button-container">
-                    <button id="new-book">New Book</button>
+                    <button id="new-book" onclick="openForm()">New Book</button>
                     <div class="form-popup" id="book-form">
-                        <form action="/action_page.php" class="form-container">
-                            <h1>Book Information</h1>
+                        <form class="form-container">
+                            <h3>Book Information</h3>
 
-                            <label for="name"><b>Name</b></label>
-                            <input type="text" placeholder="E.g., The Hobbit" name="name" required>
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="E.g., 'The Hobbit'" name="name" required>
 
-                            <label for="author"><b>Author</b></label>
-                            <input type="text" placeholder="J.R.R. Tolkien" name="author" required>
+                            <label for="author">Author</label>
+                            <input type="text" placeholder="E.g., 'J.R.R. Tolkien'" name="author" required>
 
-                            <label for="pages"><p><b>Number of Pages</b></p></label>
-                            <input type="number" placeholder="310" name="pages" required>
+                            <label for="pages">Number of Pages</label>
+                            <input type="number" placeholder="E.g., '310'" name="pages" required>
 
-                            <label for="read"><p><b>Has Been Read</b></p></label>
+                            <label for="read">Has Been Read</label>
                             <input type="checkbox" name="read" required>
 
                             <button type="submit" class="btn">Add Book</button>
-                            <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+                            <button type="button" class="cancel" onclick="closeForm()">Close</button>
                         </form>
                     </div>
                 </div>

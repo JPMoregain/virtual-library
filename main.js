@@ -7,6 +7,14 @@ let myLibrary = [
     }
 ];
 
+function openForm() {
+    document.getElementById('book-form').style.display = 'block';
+}
+
+function closeForm() {
+    document.getElementById('book-form').style.display = 'none';
+}
+
 function Book() {
 
 }
